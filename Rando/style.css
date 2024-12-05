@@ -1,0 +1,207 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", "san-serif";
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  color: white;
+  background-color: black;
+}
+
+button {
+  border: none;
+  color: white;
+}
+
+input,
+button:hover {
+  cursor: pointer;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2vw;
+  height: 4vw;
+  margin: 1vw 0;
+}
+
+.logo img {
+  width: 35px;
+}
+
+.invert {
+  filter: invert(1);
+}
+
+.nav_part2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2vw;
+}
+
+.nav_part2 button {
+  font-size: 1.3vw;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background-color: #282828;
+}
+
+.search {
+  background-color: #282828;
+  border: none;
+  padding: 1vw;
+  border-radius: 25px;
+}
+
+.search input {
+  margin: 0 8px;
+  background-color: #282828;
+  border: none;
+}
+
+.nav_btns button {
+  background-color: transparent;
+  padding: 1vw 2vw;
+  border-radius: 25px;
+  color: rgba(240, 248, 255, 0.564);
+  font-weight: 700;
+  font-size: 1.2vw;
+}
+
+.nav_btns button:last-child {
+  color: #282828;
+  background-color: aliceblue;
+  padding: 1vw 2.5vw;
+}
+
+@media screen and (max-width: 600px) {
+  nav {
+    height: 6.5vw;
+  }
+
+  .search {
+    padding: 1.5vw;
+  }
+
+  .nav_part2 button {
+    height: 35px;
+    width: 35px;
+    font-size: 2vw;
+  }
+
+  .nav_btns button {
+    padding: 1.5vw 2vw;
+    font-size: 2vw;
+  }
+}
+
+main {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  gap: 1vw;
+  padding: 0 1vw;
+}
+
+aside {
+  height: 100%;
+  width: 25%;
+  background-color: #121212;
+  padding: 2vw 1vw;
+  border-radius: 10px;
+}
+
+.library {
+  height: 2vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.library div {
+  color: rgba(255, 255, 255, 0.689);
+  display: flex;
+  /* align-items: center; */
+  gap: 10px;
+  font-size: 1.8vw;
+}
+
+.library i {
+  color: rgba(255, 255, 255, 0.689);
+}
+
+.library h6 {
+  font-weight: 500;
+}
+
+.library svg {
+  color: rgba(255, 255, 255, 0.689);
+  width: 25px;
+}
+
+section {
+    border-radius: 10px;
+  min-height: 100%;
+  width: 75%;
+  background: rgb(34, 34, 34);
+  background: linear-gradient(rgba(34, 34, 34, 1) 0%, rgba(18, 18, 18, 1) 100%);
+  padding: 2vw;
+}
+
+section h5{
+    font-size: 1.7vw;
+    font-weight: 600;
+}
+
+.container{
+    margin: 2vw 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.card{
+    background-color: black;
+    height: 200px;
+    width: 200px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+}
+
+.card-spotify-icon{
+    position: absolute;
+    width: 20px;
+    top: 6px;
+    left: 4px;
+}
+
+.card img{
+    width: 100%;
+    border-radius: 9px 9px 0 0;
+}
+
+.card-info{
+    padding: 0 1vw;
+}
+
+.card-info h6{
+    font-size: 1.1vw;
+    font-weight: 600;
+}
+
+.card-info p{
+    font-size: 0.9vw;
+}

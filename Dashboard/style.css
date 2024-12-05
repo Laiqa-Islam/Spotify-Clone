@@ -1,0 +1,309 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+button{
+    background-color:white;
+    color: black;
+    border: none;
+    padding: 0.3vw 0.7vw;
+    border-radius: 15px;
+    transition: all .5s ease;
+}
+
+button:hover{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+
+select,input{
+    color-scheme: dark;
+    background-color: black;
+    width: 90%;
+    border: none;
+    color: white;
+    padding: 0.5vw 1vw;
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.521);
+}
+
+select{
+    width: 40%;
+}
+
+
+body{
+    background-color: #191414;
+    color: white;
+}
+
+nav{
+    padding: 1vw 4vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.invert{
+    filter: invert(1);
+}
+
+.heading{
+    color: black;
+    display: flex;
+    align-items: center;
+}
+
+.profile-image{
+    background-color:white;
+    height: 4vw;
+    width: 4vw;
+    border-radius: 50%;
+    border: 1px solid white;
+    overflow: hidden;
+    color: black;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo{
+    font-weight: 700;
+}
+
+/* search bar */
+
+.search form{
+    display: flex;
+    justify-content: space-between;
+    width: fit-content;
+}
+
+.search input{
+    width: 250px;
+    margin: 0 3px 0px 0;
+    border-radius: 15px 0px 0px 15px;
+}
+
+.search button{
+    background-color:black;
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.521);
+    border-radius: 0 15px 15px 0px;
+}
+
+/* Profile Logo */
+.profile-dropdown{
+    top: 45px;
+    display: none;
+    background-color:#191414;
+    font-weight: 600;
+    cursor: pointer;
+    position: absolute;
+    color: aliceblue;
+    transition: all 0.5s ease;
+}
+
+.profile{
+    position: relative;
+
+}
+.profile:hover .profile-dropdown{
+    display: block;
+    padding: 0.5vw 1vw;
+}
+
+main{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+
+aside{
+    border: 1px solid white;
+    width: 30%;
+    background-image: url("pexels-jake-l-davies-42710276-15262988.jpg");
+    background-position: center;
+    background-size: contain;
+}
+aside ul{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.84);
+    padding: 3vw 2vw;
+}
+
+
+
+aside li{
+    border-radius: 25px;
+    cursor: pointer;
+    margin: 10px;
+    list-style: none;
+    padding: 0.5vw;
+    background-color: black;
+    color: white;
+}
+
+aside li a{
+    color: white;
+}
+
+aside li:hover a{
+    /* background-color: rgb(33, 33, 33); */
+    background-color: white;
+    color: black;
+}
+
+aside li:hover{
+    background-color: white;
+    color: black;
+}
+
+section{
+    width: 70%;
+    border: 1px solid white;
+    height: auto;
+    padding: 2vw;
+}
+
+.active{
+    background-color: white;
+    color: black;
+}
+
+.category{
+    height: 20vh;
+    width: 100%;
+    background-color: rgb(24, 23, 23);
+    border-radius: 10px;
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2vw;
+    padding:0 2vw ;
+}
+
+
+
+.cat-art{
+    display: flex;
+    gap: 3vw;
+}
+
+.cat-art form{
+    width: 50%;
+}
+
+.songs{
+    width: 90%;
+    height: 70vh;
+    background-color: rgb(24, 23, 23);
+    border-radius: 10px;
+    border: 1px solid white;
+    margin: 2vw 0;
+}
+
+.songs form{
+    padding: 3vw 2vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    /* gap: 2vw; */
+}
+
+.song-input{
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+}
+
+.song-input div:nth-child(3){
+    width: 50%;
+}
+
+.adminPost{
+    margin: 1.5vw;
+    padding: 2vw 3vw;
+    height: 70vh;
+    width: 80%;
+    background-color: rgb(24, 23, 23);
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
+.adminPost form{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+
+/* Table Styling */
+
+
+/* spacing */
+
+table {
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid white;
+  }
+thead th{
+    width: auto;
+}
+  
+  th,
+  td {
+    border-radius: 25px;
+    border: 1px solid white;
+    padding: 10px;
+    text-align: center;
+  }
+  
+/* Songs select */
+
+.songs_select form{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+.songs_select button{
+    background-color: black;
+    border: 1px solid rgba(255, 255, 255, 0.521);
+    color: white;
+    transition: all 0.5s ease;
+}
+
+.songs_select button:hover{
+    background-color: #22bb57;
+    color: black;
+}
+
+  /* sort by artists */
+
+  #searchByArtist{
+    margin: 10px 0px;
+  }

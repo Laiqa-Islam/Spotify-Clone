@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Dashboard</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="logo invert">
+        <img src="/Images/iconmonstr-spotify-1.svg" alt="" />
+      </div>
+      <div class="nav_part2">
+        <button><i class="fa-solid fa-house"></i></button>
+        <div class="search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="text" placeholder="What do you want to play?" />
+        </div>
+      </div>
+      <div class="nav_btns">
+        <button>Sign up</button>
+        <button>Log in</button>
+      </div>
+    </nav>
+
+    <main>
+        <aside>
+            <div class="library">
+                <div>
+                    <svg data-encore-id="icon" role="img" aria-hidden="false" viewBox="0 0 24 24" class="invert Svg-sc-ytk21e-0 bneLcE"><path d="M3 22a1 1 0 0 1-1-1V3a1 1 0 0 1 2 0v18a1 1 0 0 1-1 1zM15.5 2.134A1 1 0 0 0 14 3v18a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V6.464a1 1 0 0 0-.5-.866l-6-3.464zM9 2a1 1 0 0 0-1 1v18a1 1 0 1 0 2 0V3a1 1 0 0 0-1-1z"></path></svg>
+                    <h6>Your Library</h6>
+                </div>
+                <i class="fa-solid fa-plus"></i>
+            </div>
+        </aside>
+        <section>
+          <h5>Spotify Playlists</h5>
+          <div class="container">
+            <div class="card">
+              <div class="card-spotify-icon invert">
+                <img src="/Images/iconmonstr-spotify-1.svg" alt="" />
+              </div>
+              <div class="card-img">
+                <img src="https://images.pexels.com/photos/811838/pexels-photo-811838.jpeg?auto=compress&cs=tinysrgb&w=600" alt="">
+              </div>
+              <div class="card-info">
+                <h6>Angry Mood</h6>
+                <p>Calm Your Anger</p>
+              </div>
+            </div>
+
+
+            <!-- Copied Element -->
+            <div class="card">
+              <div class="card-spotify-icon invert">
+                <img src="/Images/iconmonstr-spotify-1.svg" alt="" />
+              </div>
+              <div class="card-img">
+                <img src="https://images.pexels.com/photos/811838/pexels-photo-811838.jpeg?auto=compress&cs=tinysrgb&w=600" alt="">
+              </div>
+              <div class="card-info">
+                <h6>Angry Mood</h6>
+                <p>Calm Your Anger</p>
+              </div>
+            </div>
+          </div>
+        </section>
+    </main>
+  </body>
+</html>
